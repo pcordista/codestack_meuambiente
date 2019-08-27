@@ -1,0 +1,227 @@
+.menumobile {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+}
+
+.menumobile_logo>img {
+    width: 30%;
+}
+
+.menumobile_toogle {
+    color: var(--blue);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.menumobile_toogle>i {
+    font-size: 2.5rem
+}
+
+.pushmenu {
+    /*this is the nav*/
+    background: white;
+    font-family: Montserrat;
+    width: 240px;
+    color: black;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+.pushmenu a {
+    display: block;
+    /* drops the nav vertically*/
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid lightgray;
+    padding: 14px;
+}
+
+.pushmenu a:hover {
+    background: #d9918b;
+    color: white
+}
+
+.pushmenu a:active {
+    background: #454f5c;
+    color: #fff;
+}
+
+.pushmenu-right {
+    position: absolute;
+    right: -240px;
+}
+
+.pushmenu-logo {
+    padding: 3rem 1rem 1rem;
+}
+
+.pushmenu-right.pushmenu-open {
+    right: 0;
+}
+
+.pushmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    right: 0;
+}
+
+.menumobile_container>div, .intermenu {
+    height: 80px
+}
+
+.pushmenu-push-toleft {
+    right: 240px;
+}
+
+/*Transition*/
+
+.pushmenu, .pushmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/***********************\ LARGE SCREEN FIX /***********************/
+
+@media (min-width: 1100px) {
+    /***********************\ MENU /***********************/
+    .menu-item {
+        margin: 0rem .6rem;
+    }
+    /***********************\ SLIDER /***********************/
+    .slider-control {
+        font-size: 1rem
+    }
+}
+
+
+/***********************\ MOBILE SCREEN FIX /***********************/
+@media (max-width: 960px) {
+    /***********************\ SLIDER /***********************/
+    #slider-principal {
+        height: 100% !important
+    }
+    #slider-principal>.indicators {
+        display: none !important
+    }
+    .slider-container {
+        left: 5%;
+        width: 90%;
+    }
+    .slider-cta {
+        justify-content: flex-end;
+        font-size: 1.3rem;
+    }
+    /***********************\ SOBRE /***********************/
+    .about-text {
+        padding-left: 0px !important
+    }
+    .about-text-two>div {
+        margin: 2rem 0
+    }
+    /***********************\ VIDEO /***********************/
+    .video {
+        margin-top: 1rem !important;
+        background-image: none;
+        height: inherit
+    }
+    .video-content {
+        height: 250px;
+    }
+    /***********************\ SPLIT /***********************/
+    .split {
+        background: url(../img/bg-split.jpg) no-repeat;
+        background-size: 200% 100%;
+        margin-top: -8rem;
+        background-position-x: -180px;
+    }
+    .split-controls {
+        padding: 2.5rem 1rem !important;
+    }
+    .split-control {
+        justify-content: flex-end;
+    }
+    .about-description {
+        font-size: .7rem;
+        margin: 1rem 0
+    }
+    /***********************\ PARALLAX /***********************/
+    .parallax-container .parallax img {
+        bottom: inherit;
+        top: 0;
+        height: 120%
+    }
+    .parallax-content {
+        margin-top: 3rem
+    }
+    /***********************\ PREÇOS /***********************/
+    .precos-carousel {
+        margin-top: 4rem;
+    }
+    #carousel-precos {
+        height: 900px !important
+    }
+    /***********************\ REDES /***********************/
+    .redes-img {
+        width: 100% !important
+    }
+    /***********************\ NEWSLETTER /***********************/
+    .parallax-newsletter>div {
+        width: 90%
+    }
+    .newsletter-input {
+    }
+    /***********************\ CONTATO /***********************/
+    .contato-form {
+        margin-top: 3rem;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        padding: 4rem 2rem !important;
+    }
+
+    /***********************\ COMPRAR PAGE /***********************/
+    .comprar-ambientes {
+        margin: 0rem 1rem !important
+    }
+
+    .comprar-ambientes > div {
+        min-height: 200px !important;
+        padding: 0px 5px !important;
+        font-size: 12px;
+        font-family: 'Montserrat Regular' !important
+    }
+
+    .comprar {
+        font-family: 'Montserrat'
+    }
+
+    .precos-item-descripton {
+        font-size: .8rem;
+    }
+
+    .preco-title {
+        background: none !important;
+        padding: 0rem;
+        margin: 0
+    }
+}
+
+
+/***********************\ MOBILE SCREEN FIX /***********************/
+@media (min-width: 480px) and (max-width: 960px) {
+    .menu-logo {
+        width: 60% !important
+    }
+
+    .precos-table>img {
+        width: 60%;
+        margin: 0 5%;
+    }
+}
