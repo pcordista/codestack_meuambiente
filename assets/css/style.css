@@ -352,7 +352,8 @@ input {
     right: 0;
     top: 0;
     bottom: 0;
-    justify-content: flex-end
+    justify-content: flex-end;
+    text-align: right;
 }
 
 .work-bg>img {
