@@ -34,7 +34,7 @@
       <div class="white-text textUpper relative">
         <div class="row">
           <div class="col s12 l6">
-            <div class="textUpper montserratBold parallax-title">
+            <div class="textUpper montserratBold parallax-title right-align">
               Assine nossa newsletter
             </div>
             <div class="textCapitalize parallax-subtitle right-align">

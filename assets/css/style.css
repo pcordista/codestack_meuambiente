@@ -254,7 +254,7 @@ input {
 
 .video-frame {
     width: 90%;
-    height: 170px;
+    height: 250px;
     z-index: 10;
     position: absolute;
     right: 15px;
@@ -263,7 +263,7 @@ input {
 
 .video-placeholder {
     width: 90%;
-    height: 170px;
+    height: 250px;
     z-index: 5;
     position: absolute;
     right: 0;
@@ -309,7 +309,7 @@ input {
 }
 
 .parallax-content {
-    font-size: 1.78rem;
+    font-size: 2.2rem;
     padding: 3rem 4rem;
 }
 

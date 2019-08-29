@@ -99,6 +99,10 @@
     .slider-control {
         font-size: 1rem
     }
+
+    .slider-container {
+        width: 20%;
+    }
 }
 
 

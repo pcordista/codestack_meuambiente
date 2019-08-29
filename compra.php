@@ -222,7 +222,7 @@
         </div>
       </div>
 
-      <div class="first-step center-align container">
+      <div class="first-step center-align container ocultarDisplay">
         <div class="compra-title alpaca">
           Agora vamos precisar de mais algumas informações
         </div>
