@@ -886,7 +886,39 @@
 <?php include 'footer.php'; ?>
 
 <?php include 'assets/js/js_includes.php'; ?>
-<script src="assets/js/contador.js"></script>
+<script src="assets/js/jquery.onView.js"></script>
+<script>
+  (function($) {
+
+
+
+
+
+    $('.counter').onView(function() {
+
+      CounterUp()
+
+    });
+
+    function CounterUp() {
+      console.log("oi");
+      $('.count').each(function() {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 2000,
+          easing: 'swing',
+          step: function(now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+    }
+
+
+
+  })(jQuery);
+</script>
 
 </body>
 
